@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>
+                Detalles de la foto
+            </legend>
+            <br>
+            Título <br>
+            <textarea name="titulo" id="titulo" cols="100" rows="1"></textarea>
+            <br> <br> 
+            Descripción <br>
+            <textarea name="descripcion" id="descripcion" cols="130" rows="5"></textarea>
+            <br> <br> <br>
+            <div style="width: 50%; float: left;">
+                Continente
+                <br>
+                <select name="continente" id="continente">
+                    <option value="escoger">Escoger continente</option>
+                    <option value="africa">Africa</option>
+                    <option value="asia">Asia</option>
+                    <option value="europa">Europa</option>
+                    <option value="norteamerica">Norte América</option>
+                    <option value="suramerica">Sur América</option>
+                </select>
+                <br> <br>
+                Pais <br>
+                <select name="pais" id="pais">
+                    <option value="pais">País</option>
+                    <option value="canada">Canada</option>
+                    <option value="mexico">México</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                </select>
+                <br> <br>
+                <label for="ciudad">Ciudad</label>
+                <br>
+                <input list="ciudad">
+                <datalist id="ciudad">
+                    <option value="Calgary"></option>
+                    <option value="Montreal"></option>
+                    <option value="Toronto"></option>
+                    <option value="Vancouver"></option>
+                    <option value="Tlaxcala"></option>
+                </datalist>
+                <br> <br>
+                Acepto la licencia de software
+                <input type="checkbox" name="licencia" id="licencia">
+                <br> <br>
+                Califica esta foto:
+                <br>
+                <input type="number">
+                <br> <br>
+                Colección de color:
+                <br>
+                <input type="color" name="color" id="color">
+                <br> <br>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </div>
+            <div style="width: 50%; float: left;">
+                Copyright? <br>
+                <input type="radio" name="copyright" id="todoslosderechosreservados">Todos los derechos reservados <br>
+                <input type="radio" name="copyright" id="creativecommons" checked> Creative creativecommons <br>
+                Licencias Creative Commons <br>
+                <input type="checkbox" name="creativecommons" id="atribucion">Atribución <br>
+                <input type="checkbox" name="creativecommons" id="nocomercial">No comercial <br>
+                <input type="checkbox" name="creativecommons" id="nohaytrabajosderivativos">No hay trabajos derivativos <br>
+                <input type="checkbox" name="creativecommons" id="compartirporigual">Compartir por igual <br>
+                <br>
+                Fecha de toma: <br>
+                <input type="date">
+                <br> <br>
+                Hora de toma <br>
+                <input type="time">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
